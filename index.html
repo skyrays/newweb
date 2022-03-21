@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push Notification</title>
+    <script>
+      console.log(Notification.permission)
+
+      function showNotification() {
+        const notification = new Notification("New message from Harish", {
+          body: " Hey harish this is new Notification from the office",
+        })
+      }
+
+      if (Notification === "granted") {
+        // showNotification()
+      } else if (Notification !== "denied") {
+        Notification.requestPermission().then(permission => {
+          if (Notification === "granted") {
+            showNotification()
+          }
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Push Notificatoin</h1>
+  </body>
+</html>
