@@ -4,64 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Push Notification</title>
-    <!-- <script>
-      let permission = Notification.permission
-
-      if (permission === "granted") {
-        showNotification()
-      } else if (permission === "default") {
-        requestAndShowPermission()
-      } else {
-        alert("Use normal alert")
-      }
-
-      function requestAndShowPermission() {
-        Notification.requestPermission(function (permission) {
-          if (permission === "granted") {
-            showNotification()
-          }
-        })
-      }
-      function showNotification() {
-        //  if(document.visibilityState === "visible") {
-        //      return;
-        //  }
-        let title = "I love Educative.io"
-        let icon =
-          "https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/w_596,c_limit,q_auto:best,f_auto/fc/3034007-inline-i-applelogo.jpg" //this is a large image may take more time to show notifiction, replace with small size icon
-        let body = "Message to be displayed"
-
-        let notification = new Notification(title, { body, icon })
-
-        notification.onclick = () => {
-          notification.close()
-          window.parent.focus()
-        }
-      }
-    </script> -->
-
-    <script>
-      console.log(Notification.permission)
-
-      function showNotification() {
-        const notification = new Notification("New message from Harish", {
-          body: " Hey harish this is new Notification from the office",
-        })
-      }
-
-      if (Notification === "granted") {
-        alert("fdsfasdfas fasdlfkjads")
-      } else if (Notification.permission !== "denied") {
-        Notification.requestPermission().then(permission => {
-          if (permission === "granted") {
-            showNotification()
-          }
-        })
-      }
-    </script>
+    <title>OneBill Hackathon 2022</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Push Notificatoin 1</h1>
+    <div
+      class="h-screen w-full flex items-center justify-center border bg-red-100 text-3xl"
+    >
+      Hackathon 2022
+    </div>
   </body>
 </html>
